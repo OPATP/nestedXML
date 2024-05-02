@@ -1,0 +1,12 @@
+Package: nestedXML
+Type: Package
+Title: Fast way to load or convert xml files with a high level of nesting.
+Version: 0.3.0
+Author: Gustavo Guimarães
+Maintainer: Gustavo Guimarães <gustavo234guimaraes@gmail.com>
+Description: This package is able to convert a large xml file with many nested levels to an R data.frame or convert them to nice formats like .csv or .rds.
+Imports: xml2, dplyr, data.table
+Depends: xml2, dplyr, data.table
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
