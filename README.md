@@ -1,4 +1,6 @@
-nestedXML
+# nestedXML <img align="right" src="nestedXML_logo.png?raw=true" alt="logo" width="180">
+[![Lifecycle:
+experimental](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 ================
 
 nestedXML is a package for read and convert nested XML files to friendly
