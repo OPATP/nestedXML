@@ -1,11 +1,15 @@
 # nestedXML <img align="right" src="nestedXML_logo.png?raw=true" alt="logo" width="180">
 [![Lifecycle:
 experimental](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html)
-================
 
 nestedXML is a package for read and convert nested XML files to friendly
-formats. It was created to make it easier to read large ticketing files
+formats.
+
+It was created to make it easier to read large ticketing files
 from public transport systems into R data.frames.
+
+================
+
 
 ## Instalação
 
