@@ -10,7 +10,7 @@ from public transport systems into R data.frames.
 You can install the development version from GitHub with
 
 ``` r
-remotes::install_github("gustavo234guimaraes/nestedXML")
+remotes::install_github("OPATP/nestedXML")
 ```
 
 ## Motivating examples
