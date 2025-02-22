@@ -4,11 +4,19 @@ with_names<-function(y,nm){
 }
 
 
-get_children<-function (x) {
+get_children <- function (x) {
   if (length(xml2::xml_children(x)) > 0) {
-    cbind.data.frame(with_names(data.frame(as.list(xml2::xml_attrs(x)), 
-                                                       stringsAsFactors = FALSE), nm = xml2::xml_name(x)), bind_rows(lapply(xml2::xml_children(x), 
-                                                                                                                      get_children)))
+    cbind.data.frame(
+      with_names(
+        data.frame(as.list(xml2::xml_attrs(x)), 
+                   stringsAsFactors = TRUE),
+        nm = xml2::xml_name(x)
+      ),
+      data.table::rbindlist(
+        lapply(xml2::xml_children(x),
+               get_children)
+      )
+    )
   }else {
     as.list(xml2::xml_attrs(x))
   }
